@@ -1,0 +1,343 @@
+
+body {
+    position: relative;
+}
+
+table{
+    width: 100%; /* Set the width of the table to 100% */
+    border-collapse: collapse;
+}
+
+#tableContainer {
+    margin-bottom: 30px; /* Add some margin at the bottom of the table */
+}
+
+#createButton,
+#div4,
+#printButton {
+    position: fixed;
+    width: 100px; /* Set the width of the buttons */
+    height: 50px; /* Set the height of the buttons */
+    background-color: #f2f2f2;
+    border: 1px solid #d4d4d4;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+#div4 {
+    position: fixed;
+    bottom: 10px;
+    width: 150px; /* Adjust the value to your preference */
+    right: 10px; /* Adjust the value to your preference */
+    transform: translateX(-50%); /* Center the button horizontally */
+    font-size: large;
+    background-color: #e74c3c;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    
+   
+}
+/* Style the image within the container */
+#div4 img {
+width: 20px; /* Adjust the width of the image */
+height: 20px; /* Adjust the height of the image */
+margin :auto;  /* /* Set the maximum width of the image to 100% of the container */
+
+
+}
+
+/* Style the text within the container */
+#div4 p {
+margin: 0; /* Remove any default margin on the paragraph */
+color: white;
+}
+
+#div4:hover {
+    background-color: #c0392b;
+}
+#createButton {
+    bottom: 10px; /* Adjust the value to your preference */
+    left: 10px; /* Adjust the value to your preference */
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+#createButton:hover { background-color: blue;
+
+}
+
+#printButton {
+    bottom: 10px; /* Adjust the value to your preference */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    font-size: large;
+    width: 150px;
+    background-color: #3498db;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#printButton:hover{background-color: blue;
+
+}
+
+
+
+
+
+#draggableTextbox {
+    border: 1px solid #d4d4d4;
+    padding: 10px;
+    cursor: grab; /* Set cursor to grab on hover */
+}
+
+#draggableTextbox:hover {
+    background-color: #e6e6e6; /* Change background color on hover */
+}
+
+button img {
+    width: 20px; /* Adjust the width of the image */
+    height: 20px; /* Adjust the height of the image */
+    margin-right: 5px; /* Add some spacing between the image and text */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-color: #013207;
+        }
+
+.banner2{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-color: #fff;
+        }
+
+.navbar{
+    width:100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar2{
+    width:100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#013207;
+}
+
+.logo{
+    width:120px;
+    cursor: pointer;
+    padding-left: 50px;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar2 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar2 ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar2 ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition:0.5s;
+}
+.navbar2 ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.grid-container th, .grid-container td   {
+    border: 2px solid #060418;
+    padding: 20px;
+    text-align: center;
+    image-resolution: 23px;
+    
+}
+
+#div1 {
+    width: 70px;
+    height: 70px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 10px;
+}
+
+#div1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#image-container img {
+    max-width: 100px;
+    max-height: 100px;
+    border: 1px solid #ccc;
+}
+
+/* for drug and drop pictures */
+#div1, #div2, #div3, #div4, #div5, #div6, #div7, #div8, #div9, #div10, #div11, #div12, #div13, #div14, #div15, #div16, #div17, #div18, #div19 {
+    float: left;
+    width: 50px;
+    height: 17.5px;
+    padding: 5px;
+    border: 1px solid rgb(4, 2, 2);
+    }
+
+    @media print {
+        #createButton,
+        #div4,
+        #printButton,
+        #goBackButton {
+            display: none;
+        }
+    }
+    /* styles.css */
+
+/* Add styles for buttons */
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the images within buttons */
+button img {
+    width: 20px; /* Adjust the width of the image */
+    height: 20px; /* Adjust the height of the image */
+    margin-right: 5px; /* Add some spacing between the image and text */
+    vertical-align: middle; /* Align the image vertically with the text */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Style the buttons */
+buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px; /* Set the width of the buttons */
+    
+}
